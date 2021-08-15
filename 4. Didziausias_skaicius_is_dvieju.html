@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #isvedimoLaukas {
+            background-color: gray;
+            font-weight: 800;
+            color: black;
+            width: 350px;
+        }
+
+        input {
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <input type="text" id="sk1"/>
+    <input type="text" id="sk2"/>
+
+    <button id="isvesti">Isvesti</button>
+
+    <input type="text" id="isvedimoLaukas" disabled=true/>
+
+    
+
+    <script>
+
+        "use strict"
+
+        document.querySelector("#isvesti").addEventListener("click", function () {
+
+            var a = parseInt(document.querySelector("#sk1").value);
+            var b = parseInt(document.querySelector("#sk2").value);
+            
+            if (a == b) {
+                
+               isvedimoLaukas.value = "Abu skaiciai lygus";
+                    
+			} else if ( a > b ) {
+
+				isvedimoLaukas.value = a + " " + "yra daugiau";
+
+			} else if ( a < b ) {
+
+                isvedimoLaukas.value = b + " " + "yra daugiau";
+
+            } else {
+
+                isvedimoLaukas.value = "Abu laukeliai turi buti uzpildyti skaitmenimis";
+                    
+            }
+        });
+
+
+    </script>
+    
+</body>
+</html>

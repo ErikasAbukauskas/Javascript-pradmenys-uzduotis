@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        "use strict"
+        
+        var sk1, sk2, sk3;
+
+        sk1 = 3;
+        sk2 = 4;
+        sk3 = 5;
+
+        if ((sk1 + sk2 > sk3) && (sk2 + sk3 > sk1) && (sk1 + sk3 > sk2)){
+
+            console.log("trikampi sudaryti galima");
+        
+            if ((sk1 != sk2) && (sk2 != sk3) && (sk3 != sk1)){ 
+
+	            console.log ("Trikampis yra ivairiakrastis");
+
+            } else if ( sk1==sk2 && sk2==sk3 && sk1==sk3) { 
+
+                console.log ("Trikampis yra lygiakrastis");
+
+            } else {
+
+	            console.log ("Trikampis yra lygiasonis");
+
+            }
+
+            if ((sk1*sk1) + (sk2*sk2) == (sk3*sk3) || (sk3*sk3) + (sk2*sk2) == (sk1*sk1) || (sk3*sk3) + (sk1*sk1) == (sk2*sk2)){
+
+		        console.log ("Trikampis yra statusis");
+
+            } else if ((sk1*sk1) + (sk2*sk2) < (sk3*sk3) || (sk3*sk3) + (sk2*sk2) < (sk1*sk1) || (sk1*sk1) + (sk3*sk3) < (sk2*sk2)) {
+
+		        console.log ("Trikampis yra bukasis");
+
+            } else {
+            
+                console.log ("Trikampis yra smailusis");
+            }
+
+        } else {
+
+            console.log("trikampi sudaryti negalima");
+
+            }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 paskaita</title>
+</head>
+<body>
+
+    <input type="text" id="sk"/>
+    <button id="patvirtinti">Patvirtinti</button>
+    <input type="text" id="isvedimoLaukas" disabled=true/>
+    <button id="apversti">Apversti</button>
+    <input type="text" id="apvertimas" disabled=true/>
+    
+
+    <script>
+        "use strict";
+
+        document.querySelector("#patvirtinti").addEventListener("click", function() {
+            var sk = parseInt(document.querySelector("#sk").value);
+
+            var masyvas = [];
+            while (sk !=0) {
+                masyvas.push(parseInt (sk % 10));
+                sk = parseInt (sk / 10);
+            } 
+
+            console.log(masyvas);
+            isvedimoLaukas.value = masyvas;
+
+
+            document.querySelector("#apversti").addEventListener("click", function() {
+
+
+                masyvas = masyvas.reverse();
+                console.log(masyvas);
+                apvertimas.value = masyvas;
+            });
+        });
+
+
+    </script>
+</body>
+</html>

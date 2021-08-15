@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <button onclick="myFunction()">Isvesti skaicius po pakeitimo</button>
+
+    <script>
+
+
+        // 1. Panaudoti Javascript "use-strict" režimą.
+
+        "use strict"
+    
+
+        // 2. Apsirašyti 4 kintamuosius: skaicius1, skaicius2, skaicius3, skaicius4.
+
+        var skaicius1, skaicius2, skaicius3, skaicius4, suma, sandauga;
+
+
+
+        // 3. Į konsolę išvesti visus 4 skaičius, jų visų sumą ir sandaugą.
+
+        skaicius1 = 3;
+        console.log("skaicius1");
+        console.log(skaicius1);
+
+        skaicius2 = 5;
+        console.log("skaicius2");
+        console.log(skaicius2);
+
+        skaicius3 = 7;
+        console.log("skaicius3");
+        console.log(skaicius3);
+
+        skaicius4 = 9;
+        console.log("skaicius4");
+        console.log(skaicius4);
+
+
+        suma = skaicius1 + skaicius2 + skaicius3 + skaicius4;
+        console.log("bendra suma");
+        console.log(suma);
+
+
+        sandauga = skaicius1 * skaicius2 * skaicius3 * skaicius4;
+        console.log("bendra sandauga");
+        console.log(sandauga);
+
+
+
+        // 3. Sukeisti skaicius1 ir skaicius2 reikšmes vietomis, pasinaudojant laikinuoju kintamuoju.
+
+        var laikinasis;
+
+        laikinasis = skaicius1;
+        skaicius1 = skaicius2;
+        skaicius2 = laikinasis;
+
+        console.log("po pakeitimo skaicius1 yra");
+        console.log(skaicius1);
+        console.log("po pakeitimo skaicius2 yra");
+        console.log(skaicius2);
+
+
+
+        // 4. Sukeisti skaicius3 ir skaicius4 reikšmes vietomis be laikinojo kintamojo.
+        skaicius3 = skaicius3 + skaicius4; 
+        skaicius4 = skaicius3 - skaicius4; 
+        skaicius3 = skaicius3 - skaicius4; 
+
+        console.log("po pakeitimo skaicius3 yra ");
+        console.log(skaicius3);
+        console.log("po pakeitimo skaicius4 yra ");
+        console.log(skaicius4);
+      
+
+
+        // 5. Į alert išvesti sukeitimo rezultatus.
+
+        function myFunction() {
+            
+
+        alert("skaicius1: " + skaicius1);
+        alert("skaicius2: " + skaicius2);
+        alert("bendra suma: " + (skaicius1+skaicius2));
+
+        alert("skaicius3: " + skaicius3);
+        alert("skaicius4: " + skaicius4);
+        alert("bendra suma: " + (skaicius3+skaicius4));
+
+        }
+
+
+        // 6. Susikurti kintamąjį maxSkaicius, jam priskirti maksimalią įmanomą skaitinę reikšmę (infinity netinka) ir išvesti į konsolę.
+
+        var maxSkaicius;
+        maxSkaicius = Number.MAX_VALUE;
+        console.log("Makasimali įmanoma skaitinė reikšmė");
+        console.log(maxSkaicius);
+
+
+       
+           
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+    </script>
+    
+
+</body>
+</html>

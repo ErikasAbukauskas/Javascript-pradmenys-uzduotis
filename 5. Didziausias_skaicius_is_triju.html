@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        #isvedimoLaukas {
+            background-color: gray;
+            text-align: center;
+            font-weight: 800;
+            color: black;
+            width: 350px;
+        }
+
+        input {
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <input type="text" id="sk1"/>
+    <input type="text" id="sk2"/>
+    <input type="text" id="sk3"/>
+
+    <button id="isvesti">Isvesti</button>
+
+    <input type="text" id="isvedimoLaukas" disabled=true/>
+    
+    <script>
+
+        "use strict"
+
+            document.querySelector("#isvesti").addEventListener("click", function () {
+
+                var a = parseInt(document.querySelector("#sk1").value);
+                var b = parseInt(document.querySelector("#sk2").value);
+                var c = parseInt(document.querySelector("#sk3").value);
+
+            if (a == b && a == c && b == c) {
+    
+                isvedimoLaukas.value = "Visi skaičiai lygus";
+        
+            } else if (a > b && a > c) {
+
+                isvedimoLaukas.value = a + " yra didžiausias skaičius";
+
+            } else if (b > a && b > c) {
+
+                isvedimoLaukas.value = b + " yra didžiausias skaičius";
+
+            } else if (c > a && c > b) {
+
+                isvedimoLaukas.value = c + " yra didžiausias skaičius";
+
+            } else if (a < b && a < c) {
+
+                isvedimoLaukas.value = b + " yra didžiausias skaičius";
+
+            } else if (b < a && b < c) {
+
+                isvedimoLaukas.value = c + " yra didžiausias skaičius";
+
+            } else if (c < a && c < b) {
+                
+                isvedimoLaukas.value = a + " yra didžiausias skaičius";
+
+            } else {
+
+                isvedimoLaukas.value = "Visi laukeliai turi būti užpildyti skaitmenimis";
+
+            }
+            {
+            }
+            }); 
+
+
+    </script>
+</body>
+</html>

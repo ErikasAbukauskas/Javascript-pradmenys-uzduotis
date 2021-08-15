@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="rezultatas"></div>
+    
+</body>
+<script>
+
+    "use strict"
+
+     // Papildoma:
+
+        // 1. Susikurti kintamuosius: skaicius5, skaicius6.
+
+    
+        var skaicius5, skaicius6;
+
+        
+        skaicius5 = 6;
+        console.log("skaicius5");
+        console.log(skaicius5);
+
+
+        skaicius6 = 10;
+        console.log("skaicius6");
+        console.log(skaicius6);
+
+        
+
+        // 2. Sukeisti kinamųju reikšmes skaicius5 ir skaicius6 pasitelkiant XOR operatorių.
+
+        skaicius5 = skaicius5 ^ skaicius6;
+        skaicius6 = skaicius5 ^ skaicius6;
+        skaicius5 = skaicius5 ^ skaicius6;
+
+        console.log("po pakeitimo skaicius5 yra");
+        console.log(skaicius5);
+        console.log("po pakeitimo skaicius6 yra");
+        console.log(skaicius6);
+
+        var suma = skaicius5 + skaicius6;
+
+        var rezultatas = "skaicius5 + skaicius6 bendras rezultatas yra = " + suma;
+
+        document.getElementById("rezultatas").innerHTML = rezultatas;
+
+</script>
+</html>

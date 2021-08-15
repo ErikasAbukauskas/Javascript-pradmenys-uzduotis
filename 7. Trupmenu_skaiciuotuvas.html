@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+    "use strict"
+
+    function supaprastink(trupmena) {
+
+        var a = trupmena[1];
+        var b = trupmena[2];
+
+        while ( a > 0 && b > 0) {
+
+            if (a > b) {
+                a = a % b;
+            } else {
+                b = b % a;
+
+            }
+
+        }
+
+        var dbd = a + b;
+
+        trupmena[1] /=dbd;
+        trupmena[2] /=dbd;
+
+        return trupmena;
+    }
+
+    var trupmena = [0, 18, 6];
+
+    var supaprastintaTrupmena = supaprastink (trupmena);
+
+    console.log(trupmena);
+    console.log(supaprastintaTrupmena);
+    
+    </script>
+</body>
+</html>

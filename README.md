@@ -1,1 +1,1 @@
-Kolkas uzduotis pilnai nebaigta, liko neisspresta 4 uzduotys
+Kolkas uzduotis pilnai nebaigta, liko neissprestos keturios uzduotys

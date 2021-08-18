@@ -16,18 +16,20 @@
 
     <script>
 
-        "use stricte"
+        "use stricte";
 
     var masyvai,masyvoIsvedimas;
         masyvoIsvedimas= document.querySelector("#masyvo-rezultatas");
-    var masyvas = [];
+        
+        var masyvas = [];
 
         document.querySelector(".masyvo-mygtukas").addEventListener("click", function () {
-        masyvai = document.querySelector("#masyvas").value;
-        masyvas.push(masyvai);
-        document.querySelector("#masyvas").value = "";
-        masyvoIsvedimas.value = masyvas;
-});
+            masyvai = document.querySelector("#masyvas").value;
+            masyvas.push(masyvai);
+            document.querySelector("#masyvas").value = "";
+            masyvoIsvedimas.value = masyvas;
+
+        });
 
 </script>
     

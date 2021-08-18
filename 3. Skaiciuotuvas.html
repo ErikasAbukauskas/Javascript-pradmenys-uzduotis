@@ -131,57 +131,92 @@ button:hover {
        "use strict"
 
             document.querySelector("#sudetis").addEventListener("click", function () {
-            var a = parseInt(document.querySelector("#sk1").value);
-            var b = parseInt(document.querySelector("#sk2").value);
-            var suma = a + b;
-            document.querySelector("#rezultatas").innerHTML = suma;
+                    var a = parseInt(document.querySelector("#sk1").value);
+                    var b = parseInt(document.querySelector("#sk2").value);
+                    var suma = a + b;
+                    document.querySelector("#rezultatas").innerHTML = suma;
 
-    });
+                    document.querySelector("#saknis").addEventListener("click", function () {
+                        suma = a + b;
+                        document.querySelector("#rezultatas").innerHTML = Math.sqrt(suma);
+
+                    });
+
+
+            });
 
             document.querySelector("#atimtis").addEventListener("click", function () {
-            var a = parseInt(document.querySelector("#sk1").value);
-            var b = parseInt(document.querySelector("#sk2").value);
-            var suma = a - b;
-            document.querySelector("#rezultatas").innerHTML = suma;
+                    var a = parseInt(document.querySelector("#sk1").value);
+                    var b = parseInt(document.querySelector("#sk2").value);
+                    var suma = a - b;
+                    document.querySelector("#rezultatas").innerHTML = suma;
 
-    });
+                    document.querySelector("#saknis").addEventListener("click", function () {
+                        suma = a - b;
+                        document.querySelector("#rezultatas").innerHTML = Math.sqrt(suma);
+
+                    });
+
+            });
+
             document.querySelector("#daugyba").addEventListener("click", function () {
-            var a = parseInt(document.querySelector("#sk1").value);
-            var b = parseInt(document.querySelector("#sk2").value);
-            var suma = a * b;
-            document.querySelector("#rezultatas").innerHTML = suma;
+                    var a = parseInt(document.querySelector("#sk1").value);
+                    var b = parseInt(document.querySelector("#sk2").value);
+                    var suma = a * b;
+                    document.querySelector("#rezultatas").innerHTML = suma;
 
-    });
+                    document.querySelector("#saknis").addEventListener("click", function () {
+                        suma = a * b;
+                        document.querySelector("#rezultatas").innerHTML = Math.sqrt(suma);
+
+                    });
+
+            });
+
             document.querySelector("#dalyba").addEventListener("click", function () {
-            var a = parseInt(document.querySelector("#sk1").value);
-            var b = parseInt(document.querySelector("#sk2").value);
-            var suma = a / b;
-            document.querySelector("#rezultatas").innerHTML = suma;
+                    var a = parseInt(document.querySelector("#sk1").value);
+                    var b = parseInt(document.querySelector("#sk2").value);
+                    var suma = a / b;
+                    document.querySelector("#rezultatas").innerHTML = suma;
 
-    });
+                    document.querySelector("#saknis").addEventListener("click", function () {
+                        suma = a / b;
+                        document.querySelector("#rezultatas").innerHTML = Math.sqrt(suma);
+
+                    });
+
+            });
 
             document.querySelector("#liekana").addEventListener("click", function () {
-            var a = parseInt(document.querySelector("#sk1").value);
-            var b = parseInt(document.querySelector("#sk2").value);
-            var suma = a % b;
-            document.querySelector("#rezultatas").innerHTML = suma;
+                    var a = parseInt(document.querySelector("#sk1").value);
+                    var b = parseInt(document.querySelector("#sk2").value);
+                    var suma = a % b;
+                    document.querySelector("#rezultatas").innerHTML = suma;
 
-    });
+                    document.querySelector("#saknis").addEventListener("click", function () {
+                        suma = a % b;
+                        document.querySelector("#rezultatas").innerHTML = Math.sqrt(suma);
+
+                    });
+
+                   
+            });
 
             document.querySelector("#laipsnis").addEventListener("click", function () {
-            var a = parseInt(document.querySelector("#sk1").value);
-            var b = parseInt(document.querySelector("#sk2").value);
-            var suma = a ** b;
-            document.querySelector("#rezultatas").innerHTML = suma;
+                    var a = parseInt(document.querySelector("#sk1").value);
+                    var b = parseInt(document.querySelector("#sk2").value);
+                    var suma = a ** b;
+                    document.querySelector("#rezultatas").innerHTML = suma;
 
-    });
-            document.querySelector("#saknis").addEventListener("click", function () {
-            var a = parseInt(document.querySelector("#sk1").value);
-            var b = parseInt(document.querySelector("#sk2").value);
-            var suma = a + b;
-            rezultatas.innerHTML = Math.sqrt(suma);
+                    document.querySelector("#saknis").addEventListener("click", function () {
+                        suma = a ** b;
+                        document.querySelector("#rezultatas").innerHTML = Math.sqrt(suma);
+
+                    });
+
+
+            });
              
-    });
         
 
    
